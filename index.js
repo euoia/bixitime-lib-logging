@@ -2,9 +2,9 @@ var winston = require('winston'),
 	MysqlTransport = require('./MysqlTransport.js');
 
 exports.configureWinston = function (mysqlConnection, level) {
-  if (level === undefined) {
-    level = 'debug';
-  }
+	if (level === undefined) {
+		level = 'debug';
+	}
 
 	/**
 	 * Add a mysql transport for Winston logs.
