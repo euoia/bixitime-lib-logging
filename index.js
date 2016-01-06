@@ -12,7 +12,7 @@ exports.configureWinston = function (mysqlConnection, level) {
 	winston.add(MysqlTransport, {
 		table: 'log',
 		connection: mysqlConnection,
-		level: 'debug'
+		level: level
 	});
 
 	winston.remove(winston.transports.Console);
